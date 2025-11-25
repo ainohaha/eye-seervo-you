@@ -1,7 +1,3 @@
-Here is a README written in a simple, concise, and maker-focused tone.
-
------
-
 # eye-seervo-you
 
 A little interactive installation that only looks at you when you look at it.
