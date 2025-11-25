@@ -45,7 +45,3 @@ Mac/Linux users can use the helper script to launch everything at once:
 
   * **Data Throttling:** The Python tracker limits updates to \~20 FPS to prevent flooding the ESP32.
   * **Auto-Connect:** The Processing sketch automatically hunts for a valid serial port (usbserial/SLAB/usbmodem) so you don't have to hardcode it.
-
------
-
-**Next Step:** Would you like me to create a `requirements.txt` file to go along with this so people can install the dependencies in one command?
