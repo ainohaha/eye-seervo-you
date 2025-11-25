@@ -1,13 +1,10 @@
-#to run: 
-#cd ~/Desktop/JealousEye_Project ./start_system.sh
-
 import cv2
 import mediapipe as mp
 from pythonosc import udp_client
 import time
 
 # --- CONFIGURATION ---
-# We use Port 9999 to ensure a clean connection with Processing
+# Use same Port to ensure a clean connection with Processing
 client = udp_client.SimpleUDPClient("127.0.0.1", 9999)
 
 # --- MEDIAPIPE SETUP ---
