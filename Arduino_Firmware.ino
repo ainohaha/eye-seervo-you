@@ -37,12 +37,11 @@ class GazeUI {
         ledcWrite(LED_PIN, 0);
       } else {
         // 1. SERVO LOGIC (INVERTED & WIDER)
-        // Previous: map(..., maxAngle, minAngle)
         // NEW: map(..., minAngle, maxAngle) <--- SWAPPED TO FIX DIRECTION
         // Range: 0.0 -> 10 deg, 1.0 -> 170 deg
         int targetAngle = map((int)(xPos * 100), 0, 100, minAngle, maxAngle);
         
-        // Smoothing (85% old, 15% new)
+        // Smoothing (15%)
         currentAngle = (currentAngle * 0.85) + (targetAngle * 0.15);
         servo.write(currentAngle);
 
